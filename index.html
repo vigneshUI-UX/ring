@@ -1,14 +1,39 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ring</title>
-    <script type="module" crossorigin src="/ring/assets/index-nzgdjXLc.js"></script>
-    <link rel="stylesheet" crossorigin href="/ring/assets/index-C62Bkuws.css">
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jewelry Collection Gallery</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" crossorigin href="/ring/assets/index-BRzL3ofR.css">
+</head>
+<body>
+
+  <!-- Top Navigation / Header -->
+  <header class="header">
+    <button id="back-btn" class="back-btn hidden">← Back</button>
+    <div class="header-titles">
+      <p class="sub-title">The Ultimate</p>
+      <h1 class="main-title">COLLECTIONS</h1>
+    </div>
+  </header>
+
+  <!-- Gallery Wrapper -->
+  <main class="gallery-wrapper">
+    <div class="gallery-container" id="gallery">
+      <!-- 7 Cards dynamically rendered -->
+    </div>
+
+    <!-- Detail Info Panel -->
+    <div id="detail-panel" class="detail-panel hidden">
+      <h2 id="item-title">PHANTOM EDITION</h2>
+      <p id="item-price">₹20,749</p>
+      <button id="cart-btn" class="cart-btn">Add to Cart</button>
+    </div>
+  </main>
+
+  <p class="footer-hint" id="footer-hint">Click a card to view details</p>
+
+  <script src="script.js"></script>
+</body>
 </html>
